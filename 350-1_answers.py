@@ -1,4 +1,3 @@
-
 certs = {
     "level1" : {
         "True or False: From a security perspective, the best rooms are directly next to emergency exits.": "False",
@@ -240,3 +239,4 @@ def infosec():
 
 
 main_menu()
+
