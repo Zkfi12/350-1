@@ -1,3 +1,5 @@
+import string
+
 certs = {
     "level1" : {
         "True or False: From a security perspective, the best rooms are directly next to emergency exits.": "False",
@@ -75,7 +77,7 @@ certs = {
         "Which of the following is NOT an Antiterrorism Level I theme? (Antiterrorism Scenario Training, Page 2)": "Counter-surveillance",       
     },
     
-    "cyber_awareness": {
+    "cyberawareness": {
         "What conditions are necessary to be granted access to Sensitive Compartmented Information (SCI)?": "Top Secret clearance and indoctrination into the SCI program",
         
         "Which of the following is permitted when using an unclassified laptop within a collateral classified space?": "A Government-issued wired headset with microphone",
@@ -150,6 +152,157 @@ certs = {
         
         "which of the following may indicate a malicious code attack": "a new app suddenly appears appears on the device, the device slows down, a new tap appears in the web browser",
         
+        "It is getting late on Friday. You are reviewing your employees annual self evaluation. Your comments are due on Monday. You can email your employees information to yourself so you can work on it this weekend and go home now. Which method would be the BEST way to send this information?": "Use the government email system so you can encrypt the information and open the email on your government issued laptop",
+        
+        "What should you do if someone asks to use your government issued mobile device (phone/laptop..etc)?": "Decline to lend your phone / laptop",
+        
+        "Where should you store PII / PHI?":"Information should be secured in a cabinet or container while not in use",
+        
+        "Of the following, which is NOT an intelligence community mandate for passwords?": "Maximum password age of 45 days",
+        
+        "Which of the following is NOT Government computer misuse?": "Checking work email",
+        
+        "Which is NOT a telework guideline?": "Taking classified documents from your workspace",
+        
+        "What should you do if someone forgets their access badge (physical access)?": "Alert the security office",
+        
+        "What can you do to protect yourself against phishing?": "All of the above",
+        
+        "What should you do to protect classified data?": "Answer 1 and 2 are correct",
+        
+        "What action is recommended when somebody calls you to inquire about your work environment or specific account information?": "Ask them to verify their name and office number",
+        
+        "If classified information were released, which classification level would result in ""Exceptionally grave damage to national security""?": "Top Secret",
+        
+        "Which of the following is NOT considered sensitive information?": "Sanitized information gathered from personnel records",
+        
+        "Which of the following is NOT a criterion used to grant an individual access to classified data?": "Senior government personnel, military or civilian",
+        
+        "Of the following, which is NOT a problem or concern of an Internet hoax?": "Directing you to a website that looks real",
+        
+        "Media containing Privacy Act information, PII, and PHI is not required to be labeled.": "FALSE",
+        
+        "Which of the following is NOT a home security best practice?": "Setting weekly time for virus scan when you are not on the computer and it is powered off",
+        
+        "Which of the following best describes wireless technology?": "It is inherently not a secure technology",
+        
+        "You are leaving the building where you work. What should you do?": "Remove your security badge",
+        
+        "Which of the following is a good practice to avoid email viruses?": "Delete email from senders you do not know",
+        
+        "What is considered a mobile computing device and therefore shouldn't be plugged in to your Government computer?":"All of the above",
+        
+        "Which is NOT a way to protect removable media?": "As a best practice, labeling all classified removable media and considering all unlabeled removable media as unclassified",
+        
+        "What is NOT Personally Identifiable Information (PII)?": "Hobby",
+        
+        "Of the following, which is NOT a method to protect sensitive information?": "After work hours, storing sensitive information in unlocked containers, desks, or cabinets if security is not present",
+        
+        "There are many travel tips for mobile computing. Which of the following is NOT one?": "When using a public device with a card reader, only use your DoD CAC to access unclassified information",
+        
+        "The use of webmail is": "is only allowed if the organization permits it",
+        
+        "What is considered ethical use of the Government email system?": "Distributing Company newsletter",
+        
+        "Which of the following attacks target high ranking officials and executives?": "Whaling",
+        
+        "What constitutes a strong password?": "all of the above",
+        
+        "You are logged on to your unclassified computer and just received an encrypted email from a co-worker. The email has an attachment whose name contains the word ""secret"". What should you do?": "Contact your security POC right away",
+        
+        "Which is a way to protect against phishing attacks?": "Look for digital certificates",
+        
+        "You receive an email from a company you have an account with. The email states your account has been compromised and you are invited to click on the link in order to reset your password. What action should you take?": "Notify security",
+        
+        "You are having lunch at a local restaurant outside the installation, and you find a cd labeled ""favorite song"". What should you do?": "Leave the cd where it is",
+        
+        "How should you securely transport company information on a removable media?": "Encrypt the removable media",
+        
+        "Should you always label your removable media?": "Yes",
+        
+        "Which of the following is NOT Protected Health Information (PHI)?": "Medical care facility name",
+        
+        "If authorized, what can be done on a work computer?": "Check personal email",
+        
+        "Spear Phishing attacks commonly attempt to impersonate email from trusted entities. What security device is used in email to verify the identity of sender?": "Digital Signatures",
+        
+        "What type of security is ""part of your responsibility"" and ""placed above all else?""": "Physical",
+        
+        "If your wireless device is improperly configured someone could gain control of the device? T/F": "true",
+        
+        "Which of the following is a proper way to secure your CAC/PIV?": "Remove and take it with you whenever you leave your workstation",
+        
+        "What actions should you take prior to leaving the work environment and going to lunch?": "All of the above",
+        
+        "P2P (Peer-to-Peer) software can do the following except:": "Allow attackers physical access to network assets",
+        
+        "What is the goal of an Insider Threat Program?": "Deter, Detect, and Mitigate the risks associated with insider threats",
+        
+        "Which of the following is not a best practice for traveling overseas with a mobile device?": "store the device in a hotel safe when sightseeing",
+        
+        "Which of the following uses of removeable media is allowed?": "Government owned removable media that is approved as operationally necessary",
+        
+        "Which of the following is a best practice when browsing the internet?": "Only accept cookies from reputable, trusted websites",
+        
+        "Which of the following statements about protected health information PHI is false?": "It is a type of controlled unclassified information",
+        
+        "You receive an e-mail marked important from your boss asking for data that they need immediately for a meeting starting now. The e-mail was sent from a personal e-mail address that you do not recognize, but it addresses you by name. What concern does this e-mail pose?": "This may be a spear phishing attempt. Contact your boss using contact information that you know to be legitimate.",
+        
+        "Which of the following is least likely to pose a risk to share on a social networking site?": "Your pet's name",
+        
+        "how can you protect your home computer?": "turn on the password feature",
+        
+        "Which of the following is a best practice to protect your identity?": "Order a credit report annually",
+        
+        "Which of the following is permitted within a Sensitive Compartmented Information Facility (SCIF)?": "An authorized Government-owned Portable Electronic Device (PED)",
+        
+        "Which of the following uses of removeable media is appropriate?": "Encrypting data stored on removeable media",
+        "You receive a phone call offering you a  gift card if you participate in a survey. Which course of action should you take?": "Decline to participate in the survey. This may be a social engineering attempt.",
+        
+        "Which of the following is true of transmitting or transporting Sensitive Compartmented Information (SCI)?": "Printed SCI must be retrieved promptly from the printer.",
+        
+        "Under which Cyberspace Protection Condition (CPCON) is the priority focus limited to critical and essential functions?": "CPCON 2",
+        
+        "Which of the following contributes to your online identity?": "All of these",
+        
+        "Which of the following is an appropriate use of a DoD Public Key Infrastructure (PKI) token?": "Do not use a token approved for NIPR on SIPR",
+        
+        "Which of the following statements is true of DoD Unclassified data?": "It may require access and distribution controls",
+        
+        "Which of the following describes Sensitive Compartmented Information (SCI)? SCI is a program that ____________ various types of classified information into distinct compartments for ________ protection and dissemination or distribution control.": "segregates; added",
+        
+        "Which type of data could reasonably be expected to cause serious damage to national security?": "secret",
+        
+        "Which of the following is an example of a strong password?": "d+Uf_4RimUz",
+        
+        "How can you mitigate the potential risk associated with a compressed URL?": "Use the preview function to see where the link actually leads",
+        
+        "Which of the following is permitted within a Sensitive Compartmented Information (SCIF)?": "An authorized Government-owned Portable Electronic Device (PED)",
+        
+        "Which of the following is NOT a best practice for teleworking in an environment where Internet of Things (IoT) devices are present?": "Use the devices' default security settings",
+        
+        "Which of the following is authoritative source for a derivative classification?": "Security classification guide",
+        
+        "Terri sees a post on her social media feed that says there is a smoke billowing from the Pentagon. The post includes a video that shows smoke billowing from a building that is not readily identifiable as the Pentagon Jerry is not familiar with the source of the post which of the following describes what Terry has likely seen?": "This is probably a post designed to attract Terri's attention to click on a link and steal her information",
+        
+        "Which of the following is not appropriate use for your common access card?": "Using it as a photo identification with a commercial entity",
+        
+        "Which of the following is true of spillage?": "Crap",
+        
+        "You receive a text message from a package shipper notifying you that your package delivery is delayed due to needing updated delivery instructions from you. It provided a shortened links for you to provide the need information you're not expecting a package what is the best course of action?": "Delete the message",
+        
+        "Which of the following is true of transmitting or transporting sensitive compartmented information sci?": "Printed SCI must be retrieved properly from the printer",
+        
+        "Which of the following is the best practice for Physical security?": "Use your own security badge or key code for facility access",
+        
+        "Which of the following is a step you should not take to protect against spillage?": "Purge any devices memory before connecting it to a classified network",
+        
+        "Which of the following statements is true of DOD unclassified data?": "It may require access and distribution controls",
+        
+        
+        "Which of the following is not a best practice for protecting your home wireless not work for telework?": "Use your routers preset service, set identifier (SSID) and password",
+        
+        
         
         
         
@@ -167,7 +320,7 @@ certs = {
         
         "The Physical Security Program is designed to:": "Protect against espionage, sabotage, damage, and theft",
         
-        "All of the following are examples of Adverse Information that must be reported EXCEPT:": "Traffic violations with a fine under $300",
+        "All of the following are examples of Adverse Information that must be reported EXCEPT:": "Traffic violations with a fine under ",
         
         "You must obtain a defensive foreign travel security briefing prior to travel or at least once a year from whom?": "Security Office",
         
@@ -178,8 +331,23 @@ certs = {
     }    
 }
 
+    
+def remove_punctuation(text):
+    return text.translate(str.maketrans('', '', string.punctuation))
+
+def convert_to_lowercase(dictionary):
+    if isinstance(dictionary, dict):
+        return {remove_punctuation(k.lower()): convert_to_lowercase(v) for k, v in dictionary.items()}
+    elif isinstance(dictionary, list):
+        return [convert_to_lowercase(item) for item in dictionary]
+    else:
+        return remove_punctuation(dictionary.lower())
+        
+certs = convert_to_lowercase(certs)
+
 
 def main_menu():
+    print(certs.keys())
     while True:
         
          print("Welcome to the 350-1 helper.\n")
@@ -203,7 +371,7 @@ def main_menu():
 def anti_terrorism():
     while True:
          print("LEVEL 1 ANTI-TERRORISM\n")
-         user_input = input("Please copy and paste the question here, then press enter to recieve the answer: ")
+         user_input = remove_punctuation(input("Please copy and paste the question here, then press enter to recieve the answer: ")).lower()
          if user_input in certs["level1"]:
              print("Answer: ", certs["level1"][user_input])
              
@@ -215,9 +383,9 @@ def cyber_awareness():
         print("\n")
         print("CYBER AWARENESS\n")
         print("DISCLAIMER!! YOU MUST COPY AND PASTE THE QUESTION.\n")
-        user_input = input("Please copy and paste the question here, then press enter to recieve the answer: ")
-        if user_input in certs["cyber_awareness"]:
-            print("Answer: ", certs["cyber_awareness"][user_input])
+        user_input = remove_punctuation(input("Please copy and paste the question here, then press enter to recieve the answer: ")).lower()
+        if user_input in certs["cyberawareness"]:
+            print("Answer: ",certs["cyberawareness"][user_input])  
             
         else:
             print("Question not found, try another question.")
@@ -226,9 +394,9 @@ def infosec():
     while True:
         print("INFOSEC\n")
         print("DISCLAIMER!! YOU MUST COPY AND PASTE THE QUESTION.\n")
-        user_input = input("Please copy and paste the question here, then press enter to recieve the answer: ")
+        user_input = remove_punctuation(input("Please copy and paste the question here, then press enter to recieve the answer: ")).lower()
         if user_input in certs["infosec"]:
-            print("Answer: ", certs["infosec"][user_input])
+            print("Answer: ",certs["infosec"][user_input])
             
         else:
             print("Question not found, try another question.")
@@ -239,4 +407,3 @@ def infosec():
 
 
 main_menu()
-
